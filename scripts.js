@@ -45,7 +45,7 @@ function getAkanName () {
 
 
     //formula to determine day of birth (Sunday = 1, Monday = 2)etc..
-    let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+    let weekDayNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
     ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
     // CReating Arraiys for the necessary information for the fomulae
