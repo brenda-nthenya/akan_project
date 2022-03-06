@@ -79,3 +79,29 @@ function getAkanName () {
         "Afua",
         "Ama"
     ];
+
+    // Generating an index value to select items in the array
+    let index;
+    if (weekDay == 0){
+        index = 6;
+    } else {
+        index = weeDay - 1;
+    }
+
+    console.log(index);
+
+    if (myGender == "male" && monthChecker && dayChecker){
+        document.getElementById('result').textContent = "You were born on a " + weekDay[index] + " , your Akan name is " + maleAkanNames[index];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        document.getElementById('result').style.fontSize = "18px";
+        document.querySelector('h1').textContent = "Hello" + " " + maleNames[index];
+    return false;
+    } else if (myGender == "female" && monthChecker && dayChecker){
+        document.getElementById('result').textContent = "You were born on a " + weekDay[index] + " , your Akan name is " + femaleNames[index];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        document.getElementById('result').style.fontSize = "18px";
+        document.querySelector('h1').textContent = "Hello" + " " + femaleNames[index];
+        return false;
+    } else {
+        alert("Yo have entered invalid information. KIndy check the details filled");
+    }
