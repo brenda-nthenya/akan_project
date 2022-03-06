@@ -48,4 +48,34 @@ function getAkanName () {
     let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
     ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
-    
+    // CReating Arraiys for the necessary information for the fomulae
+
+    let weekDay = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ];
+
+    let maleNames = [
+        "Kwasi",
+        "Kwadwo",
+        "Kwabena",
+        "Kwaku",
+        "Yaw",
+        "Kofi",
+        "Kwame"
+    ];
+
+    let femaleNames = [
+        "Akosua",
+        "Adwoa",
+        "Abenaa",
+        "Akua",
+        "Yaa",
+        "Afua",
+        "Ama"
+    ];
