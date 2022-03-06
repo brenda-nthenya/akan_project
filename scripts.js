@@ -17,7 +17,7 @@ function getAkanName () {
     console.log(myGenderValue);
 
     // validation functions
-    function monthChecker () {
+    function monthChecker() {
      if (monthOfBirth < 1 || monthOfBirth > 12) {
       return false;
         } else {
@@ -25,7 +25,7 @@ function getAkanName () {
      }
     }
 
-    function dayChecker () {
+    function dayChecker() {
         if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
           if (dayOfBirth > 28 || dayOfBirth < 1) {
             return false;
@@ -43,9 +43,11 @@ function getAkanName () {
         }
       }
 
+    let monthValid = monthChecker();
+    let dayValid = dayChecker();
 
     //formula to determine day of birth (Sunday = 1, Monday = 2)etc..
-    let weekDayNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+    let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
     ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
     // CReating Arraiys for the necessary information for the fomulae
@@ -82,21 +84,21 @@ function getAkanName () {
 
     // Generating an index value to select items in the array
     let index;
-    if (weekDay == 0){
+    if (dayOfWeekNumber == 0){
         index = 6;
     } else {
-        index = weeDay - 1;
+        index = dayOfWeekNumber - 1;
     }
 
     console.log(index);
 
-    if (myGender == "male" && monthChecker && dayChecker){
+    if (myGenderValue == "male" && monthValid && dayValid){
         document.getElementById('result').textContent = "You were born on a " + weekDay[index] + " , your Akan name is " + maleAkanNames[index];
         document.getElementById('display-name').textContent = "Here is your Akan name: ";
         document.getElementById('result').style.fontSize = "18px";
         document.querySelector('h1').textContent = "Hello" + " " + maleNames[index];
-    return false;
-    } else if (myGender == "female" && monthChecker && dayChecker){
+        return false;
+    } else if (myGenderValue == "female" && monthValid && dayValid){
         document.getElementById('result').textContent = "You were born on a " + weekDay[index] + " , your Akan name is " + femaleNames[index];
         document.getElementById('display-name').textContent = "Here is your Akan name: ";
         document.getElementById('result').style.fontSize = "18px";
@@ -105,3 +107,4 @@ function getAkanName () {
     } else {
         alert("Yo have entered invalid information. KIndy check the details filled");
     }
+}

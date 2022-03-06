@@ -20,85 +20,95 @@
                   Here are the Akan names:
               </p>
               <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Day of the week</th>
-                <th scope="col">Male</th>
-                <th scope="col">Female</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-                <th scope="row">Sunday</th>
-                <td>Kwasi</td>
-                <td>Akusua</td>
-            </tr>
-            <tr>
-                <th scope="row">Monday</th>
-                <td>Kwadwo</td>
-                <td>Adwoa</td>
-            </tr>
-            <tr>
-                <th scope="row">Tuesday</th>
-                <td>Kwabena</td>
-                <td>Abenaa</td>
-            </tr>
-            <tr>
-                <th scope="row">Wednesday</th>
-                <td>Kwaku</td>
-                <td>Akua</td>
-            </tr>
-            <tr>
-                <th scope="row">Thursday</th>
-                <td>Yaw</td>
-                <td>Yaa</td>
-            </tr>
-            <tr>
+                <thead>
+                    <tr>
+                        <th scope="col">Day of the week</th>
+                        <th scope="col">Male</th>
+                        <th scope="col">Female</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td>Kwasi</td>
+                        <td>Akusua</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>Kwadwo</td>
+                        <td>Adwoa</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>Kwabena</td>
+                        <td>Abenaa</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>Kwaku</td>
+                        <td>Akua</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td>Yaw</td>
+                        <td>Yaa</td>
+                    </tr>
+                    <tr>
                 <th scope="row">Friday</th>
                 <td>Kofi</td>
                 <td>Afua</td>
-            </tr>
-            <tr>
-                <th scope="row">Saturday</th>
-                <td>Kwame</td>
-                <td>Ama</td>
-            </tr>
-          </tbody>
+                    </tr>
+                    <tr>
+                        <th scope="row">Saturday</th>
+                        <td>Kwame</td>
+                        <td>Ama</td>
+                    </tr>
+                </tbody>
               </table>
 
-              <p id="display-name">
-                  <form class="my_form" onsubmit="return getAkanName()">
-                    <label for="gender">
-                    <p>Select your gender:</p>
-                    Male
-                    <input id="male-input" type="radio" name="gender" value="male" required="">
-                    Female
-                    <input id="female-input" type="radio" name="gender" value="male" required="">
-                    </label>
-                    <br>
-                    <br>
+              <br>
+
+              <form class="myform" onsubmit="return getAkanName()">
                     <label for="year-of-birth">
                         Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required="">
                     </label>
+
                     <label for="month-of-birth">
                         Month:<input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required="">
                     </label>
+
                     <label for="day-of-birth">
                         Day:<input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required="">
                     </label>
+                    
+                    <br>
+
+                    <label for="gender">
+                        <p>Select your gender:</p>
+                        Male
+                        <input id="male-input" type="radio" name="gender" value="male" required="">
+                        Female
+                        <input id="female-input" type="radio" name="gender" value="female" required="">
+                        </label>
+                    
                     <input id="get-name" type="submit" name="" value="Generate Name">
-                  </form>
-                  <br>
-                  <form onsubmit="return clearInput()">
+                </form>
+
+                <br>
+
+                <form onsubmit="return clearInput()">
                     <input class="clear" type="submit" value="Clear Input">
-                  </form>
-                  <br>
-                  <p> Your Akan name is:</p>
-              </p>
-              <p id="result"></p>
+                </form>
+
+                <br>
+
+                <h4 id="display-name">
+                    <p> Your Akan name is shown below:</p>
+                </h4>
+
+                <p id="result"></p>
           </div>
       </div>
-
       <script src="scripts.js"></script>
   </body>
 </html>
