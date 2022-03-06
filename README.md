@@ -22,6 +22,24 @@ Here are the features in summary:
 * Select Gender.
 * Output Akan name.
 
+# BDD
+1. Have a small description of the landing page
+2. Enter my birthday through a form. This includes 
+    * Year of birth
+    * Month of birth
+    * Day of birth
+3. Choose what gender I am.
+4. See my Akan Name displayed.
+
+# Technologies Used
+## The following is a list of the technologies used
+* HTML - For building the user interface
+* CSS - For styling the user interface
+* Javascript - For document object manipulation
+* Bootstrao - For styling the interface
+
+# Known Bugs
+## There are currently no known bugs in the web application.
 
 
 
