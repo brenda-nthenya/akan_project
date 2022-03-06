@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="images/icon.jpeg">
   </head>
   <body>
       <div class="content">
@@ -64,7 +65,7 @@
             </tr>
           </tbody>
                 </table>
-              <h4 id="display-name">
+              <p id="display-name">
                   <form class="my_form" onsubmit="return getAkanName()">
                     <label for="gender">
                     <p>Select your gender:</p>
@@ -86,12 +87,13 @@
                     </label>
                   </form>
                   <br>
-                  <br>
+                
                   <form onsubmit="return clearInput()">
                     <input class="clear" type="submit" value="Clear Input">
                   </form>
+                  <br>
                   <p> Your Akan name is:</p>
-              </h4>
+              </p>
               <p id="result"></p>
           </div>
       </div>
