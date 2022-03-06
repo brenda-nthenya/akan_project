@@ -1,7 +1,6 @@
 body{
     font-family: 'Roboto Mono', monospace;
     background-color: cornsilk;
-
 }
 
 h1{
@@ -23,7 +22,7 @@ h4{
 .container{
     width: 80%;
     margin: auto;
-    align: center;
+    box-align: center;
 }
 
 .content{
